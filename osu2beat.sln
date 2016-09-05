@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu2beat", "osu2beat\osu2beat.csproj", "{8AF0AB2E-4B1F-4BAC-8B9F-BB69E1DD4FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chordgen", "chordgen\chordgen.csproj", "{BC1EFA1D-1EC3-40E2-BCA3-935E019BC884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "common\common.csproj", "{066B7396-EAEA-4DDD-B7DF-FB25335D0836}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AF0AB2E-4B1F-4BAC-8B9F-BB69E1DD4FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF0AB2E-4B1F-4BAC-8B9F-BB69E1DD4FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF0AB2E-4B1F-4BAC-8B9F-BB69E1DD4FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF0AB2E-4B1F-4BAC-8B9F-BB69E1DD4FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1EFA1D-1EC3-40E2-BCA3-935E019BC884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1EFA1D-1EC3-40E2-BCA3-935E019BC884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1EFA1D-1EC3-40E2-BCA3-935E019BC884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1EFA1D-1EC3-40E2-BCA3-935E019BC884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066B7396-EAEA-4DDD-B7DF-FB25335D0836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066B7396-EAEA-4DDD-B7DF-FB25335D0836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066B7396-EAEA-4DDD-B7DF-FB25335D0836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066B7396-EAEA-4DDD-B7DF-FB25335D0836}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
