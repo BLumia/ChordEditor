@@ -251,3 +251,13 @@ paket-files/
 .idea/
 *.sln.iml
 
+/chordgen/annotator/icuuc53.dll
+/chordgen/annotator/libgcc_s_dw2-1.dll
+/chordgen/annotator/libstdc++-6.dll
+/chordgen/annotator/libwinpthread-1.dll
+/chordgen/annotator/Qt5Core.dll
+/chordgen/annotator/Qt5Network.dll
+/chordgen/annotator/Qt5Xml.dll
+/chordgen/annotator/sonic-annotator.exe
+/chordgen/annotator/icudt53.dll
+/chordgen/annotator/icuin53.dll
