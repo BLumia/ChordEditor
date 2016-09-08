@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu2beat", "osu2beat\osu2beat.csproj", "{8AF0AB2E-4B1F-4BAC-8B9F-BB69E1DD4FFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chordgen", "chordgen\chordgen.csproj", "{BC1EFA1D-1EC3-40E2-BCA3-935E019BC884}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chordEditor", "chordgen\chordEditor.csproj", "{BC1EFA1D-1EC3-40E2-BCA3-935E019BC884}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "common\common.csproj", "{066B7396-EAEA-4DDD-B7DF-FB25335D0836}"
 EndProject
