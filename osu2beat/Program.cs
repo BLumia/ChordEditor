@@ -124,17 +124,46 @@ namespace osu2beat
         static void Main(string[] args)
         {
             DirectoryInfo folder = new DirectoryInfo(GlobalPath);
-            foreach(DirectoryInfo subfolder in folder.GetDirectories())
+            if (!folder.Exists)
             {
-                //MusicFolderName = subfolder.Name;
-                FileInfo[] files = subfolder.GetFiles("*.osu");
-                if(files.Length>0)
+                try
                 {
-                    FileInfo file = files[0];
-                    //Console.WriteLine(file.Name);
-                    Deal(subfolder.Name, file.Name);
+                    Console.WriteLine("Path imperialed by hard-code not exist, trying load from system register.");
+                    Microsoft.Win32.RegistryKey rk = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey("osu\\shell\\open\\command");
+                    GlobalPath = rk.GetValue("").ToString();
+                    GlobalPath = GlobalPath.Substring(1, GlobalPath.LastIndexOf(@"\")) + "\\Songs\\";
+                    folder = new DirectoryInfo(GlobalPath);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Attempt loading path from register failed.");
+                }
+                while(!folder.Exists)
+                {
+                    Console.WriteLine("Still can't found osu! songs directory. Imperial a path, pls.");
+                    GlobalPath = Console.ReadLine();
+                    folder = new DirectoryInfo(GlobalPath);
                 }
             }
+            try
+            {
+                foreach (DirectoryInfo subfolder in folder.GetDirectories())
+                {
+                    //MusicFolderName = subfolder.Name;
+                    FileInfo[] files = subfolder.GetFiles("*.osu");
+                    if (files.Length > 0)
+                    {
+                        FileInfo file = files[0];
+                        //Console.WriteLine(file.Name);
+                        Deal(subfolder.Name, file.Name);
+                    }
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Invalid or empty Songs folder.");
+            }
+
             return;
         }
     }
